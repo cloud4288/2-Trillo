@@ -1,6 +1,9 @@
 .idea/
 *.iml
 
+css/style.comp.css
+css/style.prefix.css
+
 # Logs
 logs
 *.log
