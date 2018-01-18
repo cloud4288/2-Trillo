@@ -1,4 +1,6 @@
 :root {
+  --color-white: #fff;
+  --color-black: #000;
   --color-primary: #eb2f64;
   --color-primary-light: #FF3366;
   --color-primary-dark: #BA265D;
@@ -11,6 +13,8 @@
   --color-grey-dark-1: #333;
   --color-grey-dark-2: #777;
   --color-grey-dark-3: #999;
+
+  --shadow-dark: 0 2rem 6rem rgba(map-get($vars, color-black), .4);
 }
 
 * {
@@ -30,7 +34,7 @@ html {
 }
 
 body {
-  @include var(color, color-grey-dark-2);
+  @include svar(color, color-grey-dark-2);
 
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;

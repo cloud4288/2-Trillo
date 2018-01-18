@@ -1,4 +1,6 @@
 :root {
+  --color-white: #fff;
+  --color-black: #000;
   --color-primary: #eb2f64;
   --color-primary-light: #FF3366;
   --color-primary-dark: #BA265D;
@@ -8,7 +10,8 @@
   --color-grey-light-4: #ccc;
   --color-grey-dark-1: #333;
   --color-grey-dark-2: #777;
-  --color-grey-dark-3: #999; }
+  --color-grey-dark-3: #999;
+  --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.4); }
 
 * {
   margin: 0;
@@ -32,3 +35,33 @@ body {
   background-size: cover;
   background: linear-gradient(to right bottom, var(--color-primary-light), var(--color-primary-dark)) no-repeat;
   min-height: 100vh; }
+
+.container {
+  max-width: 120rem;
+  margin: 8rem auto;
+  background-color: #faf9f9;
+  background-color: var(--color-grey-light-1, #faf9f9);
+  box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.4);
+  box-shadow: var(--shadow-dark, 0 2rem 6rem rgba(0, 0, 0, 0.4));
+  min-height: 50rem; }
+
+.content {
+  display: flex; }
+
+.header {
+  height: 7rem;
+  background-color: #fff;
+  background-color: var(--color-white, #fff);
+  border-bottom: #f4f2f2;
+  border-bottom: var(--color-grey-light-2, #f4f2f2); }
+
+.hotel-view {
+  background-color: #fff;
+  background-color: var(--color-white, #fff);
+  background-color: orangered;
+  flex: 1; }
+
+.sidebar {
+  background-color: #333;
+  background-color: var(--color-grey-dark-1, #333);
+  flex: 0 0 18%; }

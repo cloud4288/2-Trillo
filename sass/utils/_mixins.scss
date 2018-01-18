@@ -1,4 +1,4 @@
-@mixin var($property, $varName) {
-  #{$property}: map-get($colors, $varName);
-  #{$property}: var(--#{$varName}, map-get($colors, $varName));
+@mixin svar($property, $varName) {
+  #{$property}: map-get($vars, $varName);
+  #{$property}: var(--#{$varName}, map-get($vars, $varName));
 }

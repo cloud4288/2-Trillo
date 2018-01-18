@@ -1,0 +1,6 @@
+.hotel-view {
+  @include svar(background-color, color-white);
+  background-color: orangered;
+
+  flex: 1;
+}

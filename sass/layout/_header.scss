@@ -1,0 +1,5 @@
+.header {
+  height: 7rem;
+  @include svar(background-color, color-white);
+  @include svar(border-bottom, color-grey-light-2);
+}
