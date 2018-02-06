@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "watch:sass": "node-sass sass/main.scss css/style.css -w",
-    "browser-sync": "browser-sync start --server --files \"css/*.css\" --no-open",
+    "browser-sync": "browser-sync start --server --files 'css/*.css' 'index.html' --no-open",
     "start": "npm-run-all --parallel browser-sync watch:sass",
     
     "compile:sass": "node-sass sass/main.scss css/style.comp.css",
